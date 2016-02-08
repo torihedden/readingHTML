@@ -107,10 +107,11 @@ used for storing and organizing data, using columns and rows.
 
 ## `<img>`
 
-* _parents_:
-* _content_:
-* _display_:
+an image
 
+* _parents_: Any element that can contain phrasing elements. [18]
+* _content_: empty. this is a void element (an element that is never allowed to have contents under any circumstances. Can have attributes.) [17]
+* _display_: `inline-block`
 
 ###### Footnotes
 
@@ -130,3 +131,5 @@ used for storing and organizing data, using columns and rows.
 [14](https://www.w3.org/TR/html-markup/dt.html#dt-term)
 [15](https://www.w3.org/TR/html-markup/form.html#form)
 [16](https://www.w3.org/TR/html-markup/table.html#table)
+[17](https://www.w3.org/TR/html-markup/syntax.html#void-element)
+[18](https://www.w3.org/TR/html-markup/img.html#img)
