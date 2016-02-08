@@ -61,36 +61,49 @@ A header tag. The number after h denotes a relative size this tag will display a
 
 ## `<span>`
 
-* _parents_:
+* _parents_: Any element that can contain phrasing elements
 * _content_: phrasing content (e.g. `<em>`, `<strong>`, and `<label>`)[11]
-* _display_:
+* _display_: `block`
 
 ## `<li>`
 
 an element in a list. each item in the list must be surrounded by these tags.
 
-* _parents_: <ul> or <ol>, unordered list and ordered list, respectively.
-* _content_:
+* _parents_: `<ul>` or `<ol>`, unordered list and ordered list, respectively.
+* _content_: Flow Content [12]
 * _display_:`block`
 
+## `<dl>`
+
+a description list [13]
+
+* _parents_: any elements that can contain flow elements
+* _content_: `<dt>` elements, followed by `<dd>`
+* _display_: `block`
 
 ## `<dt>`
 
-* _parents_:
-* _content_:
-* _display_:
+a term or name in a description-list. Always requires a start tag but does not require an end tag if the element is followed immediately by another `<dt>` or `<dd>` [14]
+
+* _parents_: `<dl>`
+* _content_: Flow content
+* _display_: `block`
 
 ## `<form>`
 
-* _parents_:
-* _content_:
-* _display_:
+a submittable form, filled out by a user. requires a start and end tag. [15]
+
+* _parents_: any element that can contain flow content
+* _content_: flow content
+* _display_: `block`
 
 ## `<table>`
 
-* _parents_:
-* _content_:
-* _display_:
+used for storing and organizing data, using columns and rows.
+
+* _parents_: any element that can contain flow elements [16]
+* _content_: an optional caption (aka title), `<colgroup>` elements (columns), `<tr>` (rows), `<tbody>`, `<tfoot>`
+* _display_: `table`
 
 ## `<img>`
 
@@ -112,3 +125,8 @@ an element in a list. each item in the list must be surrounded by these tags.
 [9](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 [10](https://www.w3.org/TR/html-markup/h1.html)
 [11](https://www.w3.org/TR/html-markup/span.html#span)
+[12](https://www.w3.org/TR/html-markup/li.html#li)
+[13](https://www.w3.org/TR/html-markup/dl.html#description-list)
+[14](https://www.w3.org/TR/html-markup/dt.html#dt-term)
+[15](https://www.w3.org/TR/html-markup/form.html#form)
+[16](https://www.w3.org/TR/html-markup/table.html#table)
