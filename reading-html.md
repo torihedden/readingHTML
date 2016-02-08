@@ -113,6 +113,22 @@ an image
 * _content_: empty. this is a void element (an element that is never allowed to have contents under any circumstances. Can have attributes.) [17]
 * _display_: `inline-block`
 
+## `<a>`
+
+hyperlink tag. Requires both a start and end tag. The destination URL is contained within the first tag, using href.
+
+* _parents_: any element that can contain phrasing elements, any element that can contain flow elements [19]
+* _content_: either phrasing content or flow content
+* _display_: `none`
+
+## `<link>`
+
+link, inter-document links [20]
+
+* _parents_: element that can contain metadata elements [20]
+* _content_: empty, a void element (i.e. never allowed to have any content) [20]
+* _display_: `none`
+
 ###### Footnotes
 
 [1](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
@@ -133,3 +149,5 @@ an image
 [16](https://www.w3.org/TR/html-markup/table.html#table)
 [17](https://www.w3.org/TR/html-markup/syntax.html#void-element)
 [18](https://www.w3.org/TR/html-markup/img.html#img)
+[19](https://www.w3.org/TR/html-markup/a.html#a)
+[20](https://www.w3.org/TR/html-markup/link.html#link)
